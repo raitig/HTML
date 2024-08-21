@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu </title>
+</head>
+<body>
+    <h2> Arithmetic operation </h2>
+    <button type ="button" onclick = "addition()">ADD</button>
+    <button type ="button" onclick = "subtraction()">SUB</button>
+    <button type ="button" onclick = "multiplication()">MUL</button>
+    <button type ="button" onclick = "division()">DIV</button> 
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+
+    <script>
+        let x,y  ,a,b,c,d;
+        x = 10;
+        y = 5;
+        
+        function addition(){
+            a = x + y ;
+            document .getElementById("add").innerHTML = "The addition two number is "+ a +".";
+        }
+        function subtraction(){
+            b = x - y ;
+            document.getElementById("sub").innerHTML = "The subtraction two number is "+ b +".";
+        }
+        function multiplication(){
+            c = x * y ;
+            document.getElementById("mul").innerHTML = "The multiplication two number is "+ c +".";
+        }
+        function division(){
+            d = x / y ;
+            document.getElementById("div").innerHTML = "The division two number is "+ d +".";
+        }
+
+    </script>
+</body>
+</html>
